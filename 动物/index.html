@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.js"></script>
+		<script src="js/swiper.min.js"></script>
+    	<script src="js/jQueryRotate.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+	</head>
+
+	<body>
+		<div id="top">	
+			<div class="swiper-container" id="slide-box">
+				<!--轮播图-->
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="imgg/banner01.jpg" alt="" /></div>
+					<div class="swiper-slide"><img src="imgg/banner02.jpg" alt="" /></div>
+					<div class="swiper-slide"><img src="imgg/banner03.jpg" alt="" /></div>
+				</div>
+				<!-- 分页器 -->
+				<div class="swiper-pagination swiper-pagination-bullets"></div>
+				<script>
+					var mySwiper = new Swiper('.swiper-container', {
+						direction: 'horizontal',
+						loop: true,
+						pagination: {
+							el: '.swiper-pagination',
+							clickable :true,
+						},
+						autoplay:true,
+						delay:2,
+					});
+			</script>
+			</div>
+			<div id="navi"><!--顶部导航-->
+				<!--LOGO-->
+				<div id="logo-box"><a href="javascript:void(0)" id="logo"></a></div>
+				<!--主页导航栏-->
+				<div id="homenav">
+					<ul>
+						<li id="li1" class="cur"><a href="javascript:void(0)">首页</a></li>
+						<li><a href="javascript:void(0)">关于</a></li>
+						<li><a href="javascript:void(0)">案例</a></li>
+						<li><a href="javascript:void(0)">博客</a></li>
+						<script>
+							$('#homenav li').not('#li1').bind({
+								'mouseover':function(){
+									$(this).addClass('cur');
+								},
+								'mouseout':function(){
+									$(this).removeClass('cur');
+								}
+							});
+						</script>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="center">
+			<div id="context">
+				<h1>我们是人类最好的朋友，请在乎我们！关心我们！</h1>
+				<div class="n-case clear-fix">
+					<h2>精华作品</h2>
+					<ul>
+						<li>
+							<div class="casebox">
+								<div class="case-hide"><a href="javascript:void(0)"></a></div>
+								<div class="case-img"><a href="javascript:void(0)">
+									<img src="imgg/c4.jpg" alt="" />
+								</a></div>
+								<div class="case-title">
+									<h3>
+										<a href="javascript:void(0)">好奇害死猫</a>
+									</h3>
+									<p>作者：肥肥</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="casebox">
+								<div class="case-hide"><a href="javascript:void(0)"></a></div>
+								<div class="case-img"><a href="javascript:void(0)">
+									<img src="imgg/c5.jpg" alt="" />
+								</a></div>
+								<div class="case-title">
+									<h3>
+										<a href="javascript:void(0)">你我一家人</a>
+									</h3>
+									<p>作者：tango</p>
+								</div>
+							</div>
+						</li>
+						<li class="nm">
+							<div class="casebox">
+								<div class="case-hide"><a href="javascript:void(0)"></a></div>
+								<div class="case-img"><a href="javascript:void(0)">
+									<img src="imgg/c6.JPG" alt="" />
+								</a></div>
+								<div class="case-title">
+									<h3>
+										<a href="javascript:void(0)">气嘟嘟的邱邱</a>
+									</h3>
+									<p>作者：韩文盛</p>
+								</div>
+							</div>
+						</li>
+						<script>
+							$('.casebox').bind({
+								mouseover:function(){
+									$(this).find('.case-hide').toggle();
+								},
+								mouseout:function(){
+									$(this).find('.case-hide').toggle();
+								}
+							})
+						</script>
+					</ul>
+				</div>
+				<div class="n-news clear-fix">
+					<h2>最新动态</h2>
+					<ul>
+						<li>
+							<div class="newsbox">
+								<div class="news-hide"><a href="javascript:void(0)"></a></div>
+								<div class="news-img"><a href="javascript:void(0)">
+									<img src="imgg/n4.jpeg" alt="" />
+								</a></div>
+								<div class="news-title">
+									<h3>
+										<a href="javascript:void(0)">二哈的群居生活</a>
+									</h3>
+									<p>论哈士奇族的相处之道</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="newsbox">
+								<div class="news-hide"><a href="javascript:void(0)"></a></div>
+								<div class="news-img"><a href="javascript:void(0)">
+									<img src="imgg/n5.jpg" alt="" />
+								</a></div>
+								<div class="news-title">
+									<h3>
+										<a href="javascript:void(0)">猫狗大战的生活</a>
+									</h3>
+									<p>家有宠物如何避免混战</p>
+								</div>
+							</div>
+						</li>
+						<li class="nm">
+							<div class="newsbox">
+								<div class="news-hide"><a href="javascript:void(0)"></a></div>
+								<div class="news-img"><a href="javascript:void(0)">
+									<img src="imgg/n6.jpg" alt="" />
+								</a></div>
+								<div class="news-title">
+									<h3>
+										<a href="javascript:void(0)">小奶猫的起居</a>
+									</h3>
+									<p>猫粮的正确喂养时间</p>
+								</div>
+							</div>
+						</li>
+						<script>
+							$('.newsbox').bind({
+								mouseover:function(){
+									$(this).find('.news-hide').toggle();
+								},
+								mouseout:function(){
+									$(this).find('.news-hide').toggle();
+								}
+							})
+						</script>
+					</ul>
+				</div>
+				<div class="disgin-area">
+					<h2>服务范围</h2>
+					<ul>
+						<li>
+							<div class="d-box">
+								<img src="img/g1.png" alt="" />
+								<h5>宠物商店</h5>
+								<p>精美狗粮</p>
+								<p>美味猫粮</p>
+							</div>
+						</li>
+						<li>
+							<div class="d-box">
+								<img src="img/g2.png" alt="" />
+								<h5>宠物医院</h5>
+								<p>狂犬疫苗</p>
+								<p>防止生虫</p>
+							</div>
+						</li>
+						<li>
+							<div class="d-box">
+								<img src="img/g3.png" alt="" />
+								<h5>宠物美容</h5>
+								<p>宠物美毛</p>
+								<p>宠物护发</p>
+							</div>
+						</li>
+						<li>
+							<div class="d-box">
+								<img src="img/g4.png" alt="" />
+								<h5>宠物训练</h5>
+								<p>训练物品</p>
+								<p>训练手册</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="desgin-img">
+					<div class="desgin-item green">
+						<img src="imgg/ex1.jpg"/>
+					</div>
+					<div class="desgin-item" style="overflow: hidden;">
+						<img src="imgg/ex2.jpg"/>
+					</div>
+					<div class="desgin-item blue">
+						<img src="imgg/ex3.jpg"/>
+					</div>
+					<div class="desgin-item"  style="overflow: hidden;">
+						<img src="imgg/ex4.jpg"/>
+					</div>
+					<div class="desgin-item red">
+						<img src="imgg/ex5.jpg"/>
+					</div>
+					<div class="desgin-item"  style="overflow: hidden;">
+						<img src="imgg/ex6.jpg"/>
+					</div>
+					<script>
+						$('.desgin-item:odd').bind({
+							mouseover:function(){
+								$(this).find('img').animate({
+									width:'+=20px',
+									height:'+=20px'
+								},500);
+							},
+							mouseout:function(){
+								$(this).find('img').animate({
+									width:'-=20px',
+									height:'-=20px'
+								},500);
+							}
+						})
+					</script>
+				</div>
+				<div class="object">
+					<h1>我们已经为多个爱宠物人士提供一个<br />
+					分享宠物生活点滴的平台</h1>
+				</div>
+				<div class="partner clear-fix">
+					<ul>
+						<li><img src="img/f1.png" alt="" /></li>
+						<li><img src="img/f2.png" alt="" /></li>
+						<li><img src="img/f3.png" alt="" /></li>
+						<li><img src="img/f4.png" alt="" /></li>
+						<li><img src="img/f5.png" alt="" /></li>
+						<li><img src="img/f6.png" alt="" /></li>
+						<li><img src="img/f7.png" alt="" /></li>
+						<li><img src="img/f8.png" alt="" /></li>
+						<li><img src="img/f9.png" alt="" /></li>
+						<li><img src="img/f10.png" alt="" /></li>
+						<li><img src="img/f11.png" alt="" /></li>
+						<li><img src="img/f12.png" alt="" /></li>
+						<li><img src="img/f13.png" alt="" /></li>
+						<li><img src="img/f14.png" alt="" /></li>
+						<li><img src="img/f15.png" alt="" /></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="n-footer">
+			<div class="n-cotact">
+				<div class="wr">
+					<dl class="address">
+						<dt></dt>
+						<dd>
+							<b>山西省晋中市榆次区乌金山镇大学城</b>
+						</dd>
+						<dd>Email: hello@jane-vision.com</dd>
+					</dl>
+					<dl class="phone">
+						<dt></dt>
+						<dd>
+							<b>028-82889089 </b>
+						</dd>
+						<dd>Phone: 18980050805   18080877763 </dd>
+					</dl>
+					<dl class="share">
+						<dd>
+							<a class="social-cube" href="javascript:void(0)">
+								<img class="social-img"  src="img/rss-sina.png" alt="" />
+							</a>
+						</dd>
+						<dd>
+							<a class="social-cube" href="javascript:void(0)">
+								<img class="social-img"  src="img/rss-linked.png" alt="" />
+							</a>
+						</dd>
+						<dd>
+							<a class="social-cube" href="javascript:void(0)">
+								<img class="social-img"  src="img/rss-rss.png" alt="" />
+							</a>
+						</dd>
+					</dl>
+					<script>
+						$('.social-cube .social-img').bind('mouseover',function(){
+								$(this).rotate({
+									angle:0,
+                    				animateTo:360,
+                    				duration:500
+								});
+							});
+					</script>
+				</div>
+			</div>
+		</div>		
+	</body>
+
+</html>

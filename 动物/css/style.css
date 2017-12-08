@@ -1,0 +1,455 @@
+html {
+
+    color: #000;
+    /*	background: #FFF*/
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+fieldset, img {
+    border: 0
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal
+}
+ol, ul {
+    list-style: none
+}
+caption, th {
+    text-align: left
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+q:before, q:after {
+    content: ''
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal
+}
+sup {
+    vertical-align: text-top
+}
+sub {
+    vertical-align: text-bottom
+}
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size:100%
+}
+legend {
+    color: #000
+}
+body{
+    height: 942px;
+    max-width: 100%;
+  	 font: 12px/14px "Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    outline: none;
+    z-index: 5;
+}
+a{
+    text-decoration: none;
+}
+#top{
+	width: 100%;
+	height: 697px;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-container{
+	width: 100%;
+	height: 697px;
+}
+#slide-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+	height: 697px;
+}
+.swiper-pagination {
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    bottom: 20px;
+    height: 20px;
+}
+.swiper-wrapper{
+	width: 4332px;
+    height: 696px;
+    transform: translate3d(-2888px, 0px, 0px);
+    transition-duration: 0.3s;
+}
+.swiper-slide{
+	float:left;
+	width: 1444px;
+    height: 696px;
+}
+.swiper-pagination-switch{
+	float:left;
+	display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #fff;
+    margin: 0 5px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+#navi{
+	width: 990px;
+    position: relative;
+    z-index: 99;
+    margin: 30px auto;
+}
+#logo-box{
+	width: 164px;
+	height: 61px;
+	float: left;
+}
+#logo{
+	display: block;
+	width: 164px;
+	height: 61px;
+	background: url("../img/logo2.png");
+}
+#homenav{
+	float: right;
+}
+#homenav li{
+	display: inline-block;
+    line-height: 58px;
+    width: 107px;
+    height: 58px;
+    text-align: center;
+    margin: 0 15px;
+    cursor: pointer;
+}
+#homenav li a{
+	color: #fff;
+	font-size: 13px;
+	font-weight: 550;
+}
+.cur{
+	background: url(../img/navgiatro-over.png) no-repeat center;
+}
+#center{
+	width: 100%;
+}
+#context{
+	width: 990px;
+    margin: 0 auto;
+}
+#context h1 {
+    padding: 59px 0 39px 0;
+    text-align: center;
+    font-size: 26px;
+    font-weight: normal;
+}
+.n-case{
+	width: 990px;
+	height: 438px;
+}
+.clearfix {
+    display: block;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.n-case h2 {
+    text-indent: -999pt;
+    background: url(../img/case_title.png) no-repeat center;
+    margin-bottom: 32px;
+    height: 30px;
+}
+.n-case ul{
+	margin: 0 auto;
+}
+.n-case li {
+    float: left;
+    margin-right: 5px;
+}
+.n-case li .casebox {
+    position: relative;
+}
+.n-case li .case-hide {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 326px;
+    height: 300px;
+    background-image: url(../img/logo-mark.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.8);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    filter: alpha(opacity:80);
+}
+.n-case li .case-hide a {
+    display: block;
+    width: 326px;
+    height: 299px;
+}
+.n-case li .casebox .case-title {
+    padding: 10px 0 10px 10px;
+}
+.n-case li .casebox .case-title h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
+.n-case li .casebox .case-title h3 a {
+    color: #353535;
+    text-decoration: none;
+    line-height: 2;
+}
+.n-case li .casebox .case-title p {
+    color: #5f5f5f;
+    line-height: 2;
+}
+.n-case li.nm {
+    margin: 0;
+}
+.n-news{
+	height: 332px;
+	width: 100%;
+}
+.n-news h2 {
+    background: url(../img/news_title.png) no-repeat center;
+    margin: 32px 0;
+    height: 30px;
+    text-indent: -999pt;
+}
+.n-news ul {
+    margin: 0 auto;
+}
+.n-news li {
+    float: left;
+    margin-right: 5px;
+    width: 326px;
+}
+.n-news li .newsbox {
+    position: relative;
+}
+.n-news li .news-hide {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 326px;
+    height: 195px;
+    background-image: url(../img/logo-mark.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.8);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.n-news li .news-hide a {
+    display: block;
+    width: 326px;
+    height: 194px;
+}
+.n-news li .news-img img {
+    display: block;
+}
+.n-news li .newsbox .news-title {
+    padding: 10px 0 10px 10px;
+}
+.n-news li.nm {
+    margin: 0;
+}
+.n-news li .newsbox .news-title h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
+.n-news li .newsbox .news-title p {
+    color: #5f5f5f;
+    line-height: 2;
+}
+.n-news li .newsbox .news-title h3 a {
+    color: #353535;
+    text-decoration: none;
+    line-height: 2;
+}
+.disgin-area {
+	width: 100%;
+	margin: 0 auto;
+    padding: 10px 0 50px 0;
+    height:313px;
+}
+.disgin-area h2 {
+    background: url(../img/domain_title.png) no-repeat center center;
+    height: 30px;
+    text-indent: -999pt;
+    margin: 30px 0;
+}
+.disgin-area ul li {
+    float: left;
+    text-align: center;
+    width: 247px;
+    text-align: center;
+}
+.d-box h5 {
+    font-size: 16px;
+    line-height: 3;
+    font-weight: normal;
+}
+.d-box p {
+    font-size: 14px;
+    color: #5f5f5f;
+    line-height: 2;
+}
+.desgin-img {
+    margin: 0 auto;
+    height: 468px;
+    width: 100%;
+}
+.desgin-item {
+	float: left;
+    display: block;
+    width: 330px;
+    height: 232px;
+    position: relative;
+    overflow: hidden;
+}
+.desgin-img .blue {
+    top: -2px;
+}
+.desgin-img .desgin-item img {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.desgin-img i.green-arr {
+    background: url(../img/green-arrow.png) no-repeat;
+    bottom: -16px;
+    left: 48px;
+}
+.desgin-img i.red-arr {
+    background: url(../img/red-arrow.png) no-repeat;
+    bottom: -16px;
+    right: 48px;
+}
+.desgin-img i.blue-arr {
+    background: url(../img/blue-arrow.png) no-repeat;
+    top: -13px;
+    left: 63px;
+}
+.desgin-img i {
+    width: 34px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    z-index: 1000;
+}
+.object {
+    padding: 5px 0 5px 0;
+}
+.object h1 {
+	padding: 59px 0 39px 0;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 2;
+}
+.partner {
+    padding: 10px 0 60px 0;
+}
+.partner ul {
+    margin: 0 auto;
+    width: 990px;
+}
+.partner li {
+    display: inline-table;
+    width: 194px;
+    height: 60px;
+    text-align: center;
+    margin: 10px 0;
+}
+.partner li img {
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+.n-footer {
+    clear: both;
+}
+
+.n-cotact {
+	padding: 35px 0;
+    height: 59px;
+    background: #22252f;
+    width: 100%;
+}
+.n-cotact .wr {
+    position: relative;
+}
+.wr {
+    width: 990px;
+    margin: 0 auto;
+}
+.n-cotact dl.address {
+    float: left;
+    width: 400px;
+}
+.n-cotact dl.phone {
+    float: left;
+    width: 400px;
+}
+.n-cotact dl.share {
+    position: absolute;
+    right: 0;
+}
+.n-cotact dl.address dt {
+    margin: 5px 10px 0 0;
+    background: url(../img/icon-location.png) no-repeat;
+    width: 30px;
+    height: 35px;
+    float: left;
+}
+.n-cotact dl dd {
+    color: #aeaeae;
+    line-height: 2;
+}
+.n-cotact dl dd b {
+    color: #5ba520;
+    font-size: 13px;
+    font-weight: normal;
+}
+.phone dt {
+    float: left;
+    margin: 5px 10px 0 0;
+    background: url(../img/icon-tel.png) no-repeat;
+    width: 30px;
+    height: 35px;
+}
+.share {
+    position: absolute;
+    right: 0;
+}
+.n-cotact dl.share dd {
+    display: inline-block;
+    margin: 0 8px;
+    float: left;
+}
